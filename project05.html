@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Trending YouTube Videos in Indonesia (2022)</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Home</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="project05.html">Trending YouTube Videos in Indonesia (2022)</a></li>
+							<li><a href="project04.html">Food Inflation and Wage Growth in Indonesia (SQL and R)</a></li>
+							<li><a href="project03.html">Gender Equality in Indonesia</a></li>
+							<li><a href="project02.html">Popular Languages for Data Professionals</a></li>
+							<li><a href="project01.html">Life Expectancy Around the World (Tableau)</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<p> <b>Project Link: <a href=https://deepnote.com/@tmtsmrsl/Trending-Youtube-Videos-in-Indonesia-2022-2b996b1b-6a67-4baa-966c-7e2d0a6610f2 style="color:blue;">https://deepnote.com/@tmtsmrsl/Trending-Youtube-Videos-in-Indonesia-2022-2b996b1b-6a67-4baa-966c-7e2d0a6610f2</a></b>
+							</p>
+							<p> The project is hosted on Deepnote, presenting an analysis about trending youtube videos in Indonesia since the beginning of 2022 up to 13 Sep 2022 (around 200 trending videos were updated on each day which account to ~47k trending videos appearances). 
+							<ul>
+							Throughout the analysis I managed to solve the following questions:
+							<li>What are the most and least popular video categories in 2022?</li>
+							<li>When is the optimal day/time to publish youtube videos?</li>
+							<li>Which videos and channels appear the most on the trending page?</li>
+							<li>What are the most popular keywords for titles and tags?</li>
+							<li>How do video definition and caption availability affect the chance of a video becoming trending?</li>
+							<li>How often do videos in other languages (besides Indonesian) appear on the trending page?</li>
+							<li>How does the engagement rate (like and comment count per view) differ between categories?</li>
+							<li>Etc.</li>
+							</ul>
+							</p>
+							<p>The project is done using Python and include the following steps. First I made an ETL pipeline to request the data from Youtube API, transform it from json format to dataframe, and load the data into BigQuery table. Since it's not possible to request trending videos data in the past, I resorted to using a <a href=https://www.kaggle.com/datasets/syahrulhamdani/indonesias-trending-youtube-video-statistics style="color:blue;">dataset</a> which is updated daily by Syahrul B Hamdani. Then I performed data wrangling to remove unnecessary data, convert the data type and handle missing value. And last I did the EDA along with the visualization, which involves image manipulation with PIL, requesting additional data (youtube channel infos and videos language) from Youtube API, making waffle chart using a scatter plot and a bit of NLP technique. If you are interested with the code, you can visit my notebook <a href=https://deepnote.com/workspace/datascience-d6c9-c207135c-4160-4f0c-81dc-c822e8fdd43e/project/Trending-Youtube-Videos-in-Indonesia-2022-2b996b1b-6a67-4baa-966c-7e2d0a6610f2/notebook/Trending_Youtube_Videos-5e6d070a6c5e4f59a1d9e91b71564559#1633f18521014fcb8aa589221e395c29. style="color:blue;">here</a>.
+							</p>
+							<p> Below are some previews of the project.</p>
+							<hr>
+							<p align="center">
+							<img src="/images/trendingvideos2.png" alt="EDA Visualization" width="1052" height="800" style="margin: 0px 20px 0px 20px;" >
+							</p>
+							<hr>
+							<p align="center">
+							<img src="/images/trendingvideos1.png" alt="EDA Visualization" width="1052" height="806" style="margin: 0px 20px 0px 20px;" >
+							</p>
+							<hr>
+							<p align="center">
+							<img src="/images/trendingvideos3.jpg" alt="GDI Map Chart" width="1052" height="585">
+							</p>
+						</div>
+					</div>
+					
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<section>
+							<h2>Get in touch</h2>
+							<p>Email: timotiusmarselo@gmail.com</p>
+							<p>Github: <a href="https://github.com/tmtsmrsl" style="color:blue;">github.com/tmtsmrsl</a></p>
+							<p>Linkedin: <a href="https://www.linkedin.com/in/timotius-marselo/" style="color:blue;">Timotius Marselo</a></p>
+						</section>
+						<ul class="copyright">
+							<li>&copy; 2022 Timotius Marselo. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</footer>
+
+		</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
