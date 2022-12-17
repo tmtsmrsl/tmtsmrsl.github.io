@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>stats_tm API Reference</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Home</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="project05.html">Trending YouTube Videos in Indonesia (2022)</a></li>
+							<li><a href="project04.html">Food Inflation and Wage Growth in Indonesia (SQL and R)</a></li>
+							<li><a href="project03.html">Gender Equality in Indonesia</a></li>
+							<li><a href="project02.html">Popular Languages for Data Professionals</a></li>
+							<li><a href="project01.html">Life Expectancy Around the World (Tableau)</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<p align="center"><b>API reference for: <a href=https://pypi.org/project/stats-tm/ style="color:blue;">https://pypi.org/project/stats-tm/</a></b>
+								<br>
+								See all available classes <a href=stats_tm_api.html style="color:blue;">here</a>
+							</p>
+							<hr>
+							<p> <i>class</i> stats_tm.distribution.<b>NormalDist</b>(<i>mu: float, sigma: float</i>)
+							<ul><b>Parameters</b>:
+								<li>mu (<i>float</i>): mean of the distribution</li>
+								<li>sigma (<i>float</i>): standard deviation of the distribution</li>
+								</ul>
+							<ul><b>Attributes</b>:
+								<li>mu (<i>float</i>): mean of the distribution</li>
+								<li>sigma (<i>float</i>): standard deviation of the distribution</li>
+								</ul>
+							<ul><b>Methods</b>:
+								<li>plot_dist()
+									<br>
+									Plot the probability distribution for a normal distribution
+									<br>
+									Returns: 
+									<br>
+									<i>plotly.graph_objects.Figure</i> - Plot of the distribution
+								</li>
+								<br>
+								<li>calc_pdf(<i>x: float, plot=True</i>):
+									<br>
+									Calculate the probability density function for a normal distribution and optionally plot the distribution
+									<br>
+									Parameters:
+									<br>
+									x (<i>float</i>): value of x
+									<br>
+									plot (<i>bool, optional</i>): If True, return a plot of the distribution with probability density function at x highlighted. Defaults to True.
+									<br>
+									Returns:
+									<br>
+										<i>plotly.graph_objects.Figure or float</i> -  Plot of the distribution with probability density function at x highlighted or probability density function at x
+								</li>
+								<br>
+								<li>calc_cum_p(<i>x: float, plot=True</i>):
+									<br>
+									Calculate the cumulative probability for a normal distribution and optionally plot the distribution
+									<br>
+									Parameters:
+									<br>
+									x (<i>float</i>): value of x
+									<br>
+									plot (<i>bool, optional</i>): If True, return a plot of the distribution with cumulative probability at x highlighted. Defaults to True.
+									<br>
+									Returns:
+									<br>
+										<i>plotly.graph_objects.Figure or float</i> -  Plot of the distribution with cumulative probability at x highlighted or cumulative probability at x
+								</li>
+								</ul>
+							
+						</div>
+					</div>
+					
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<section>
+							<h2>Get in touch</h2>
+							<p>Email: timotiusmarselo@gmail.com</p>
+							<p>Github: <a href="https://github.com/tmtsmrsl" style="color:blue;">github.com/tmtsmrsl</a></p>
+							<p>Linkedin: <a href="https://www.linkedin.com/in/timotius-marselo/" style="color:blue;">Timotius Marselo</a></p>
+						</section>
+						<ul class="copyright">
+							<li>&copy; 2022 Timotius Marselo. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</footer>
+
+		</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
