@@ -52,17 +52,31 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<p align="center"><b>API reference for: <a href=https://pypi.org/project/stats-tm/ style="color:blue;">https://pypi.org/project/stats-tm/</a></b>
+							<p align="center"><b>Documentation for: <a href=https://pypi.org/project/stats-tm/ style="color:blue;">https://pypi.org/project/stats-tm/</a></b>
+							</p>
+							<p><b>Installation:</b>
+								<br>
+								<code>pip install stats-tm</code>
 							</p>
 							<hr>
-							<p><ul><b>Available classes:</b>
+							<p><ul><b>API reference for available classes:</b>
 								<li><a href=stats_tm_api_BinomialDist.html style="color:blue;">BinomialDist</a></li>
 								<li><a href=stats_tm_api_PoissonDist.html style="color:blue;">PoissonDist</a></li>
 								<li><a href=stats_tm_api_NormalDist.html style="color:blue;">NormalDist</a></li>
 								<li><a href=stats_tm_api_StudentTDist.html style="color:blue;">StudentTDist</a></li>
 							</ul>
 							</p>
-							
+							<hr>
+							<p><b>Example usage:</b>
+								<br>
+								<code>from stats_tm import distribution</code>
+								<br>
+								<code>binom = distribution.BinomialDist(n=20, p=0.4)</code>
+								<br>
+								<code>binom.calc_cum_p(k=8)</code>
+								<br>
+								<iframe height="450" width="600" frameborder="0" scrolling="no" src="plotly_output\binomdist_output.html"></iframe>
+							</p>
 						</div>
 					</div>
 					
